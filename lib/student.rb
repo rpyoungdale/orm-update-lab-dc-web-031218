@@ -45,8 +45,6 @@ class Student
   end
 
   def self.new_from_db(row)
-    #sql = "SELECT * FROM students WHERE id = ?"
-    #result = DB[:conn].execute(sql, row[0]).first
     Student.new(row[0], row[1], row[2])
   end
 
